@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    // border: 1px solid black;
+}
+.Nav{
+    // border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    border-bottom:1px solid gray;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: center;
+    position: fixed;
+    background-color: rgb(240, 230, 210);
+    width: 100%;
+    *a{
+        margin-right: 50px;
+        font-size: 22px;
+        color:rgb(168, 99, 15);
+    }
+    span{
+
+        color: black;
+        font-weight:bold;
+    }
+}
+.allAuthorsBox{
+    // border: 1px solid red;
+    padding: 30px;
+    color: rgb(11, 80, 11);
+    padding-top: 75px;
+}
+.AuthorsImg img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px;
+}
+.InfoAndImage{
+    // border: 1px solid black;
+    display: flex;
+    width: 600px;
+    margin-bottom: 85px;
+    box-shadow: 4px 7px 19px 4px rgba(0,0,0,0.69);
+}
+.AuthorsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.AuthorsInfo :first-child {
+    text-align: center;
+    margin-bottom: 5px;
+}
+.AuthorsInfo{
+        /* padding: 10px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+.AuthorsImg{
+    display: flex;
+    align-items: center;
+}
+.Sign-up-Modal{
+    display:none;
+    align-items: center;
+    justify-content: center;
+    // border: 1px solid red;
+}
+.Sign-up-Modal1{
+    display: none;
+}
+.Sign-up-Modal-Container, .Sign-up-Modal-Container1{
+    border: 1px solid black;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 200px;
+    border-radius: 10px;
+    position: fixed;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    // backdrop-filter:blur(2px);
+    // filter: blur(.2px);
+    // opacity: .8;
+}
+.Sign-up-Modal-Container1{
+    width: 409px;
+    height: 165px;
+}
+.Input-container, .Input-container1{
+    // border:1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    input{
+        height: 33px;
+        padding: 10px;
+    }
+}
+.Close , .Close1{
+    // border: 1px solid red;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: end;
+    padding: 3px;
+}
+.ClosebtnText, .ClosebtnText1{
+    // border: 1px solid black;
+    width: fit-content;
+    padding: 3px;
+    color: rgb(71, 138, 116);
+    margin-top: -20px !important;
+    font-size: 20px;
+}
+.ClosebtnText:hover{
+    cursor: pointer;
+}
+.Name, .Mail, .Sign-up-Button, .Mail1, .Sign-up-Button1{
+    margin-left: 12px;
+}
+.Sign-up-Button, .Sign-up-Button1{
+    border: 2px solid rgb(39, 82, 39);
+    border-radius: 5px;
+    width: 190px;
+    :hover{
+        cursor: pointer;
+    }
+    P{
+        padding:8px 55px;
+    }
+}

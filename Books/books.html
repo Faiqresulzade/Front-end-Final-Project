@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./books.css">
+    <script src="./Books.js" defer></script>
+    <link rel="stylesheet" href="../main/style.css">
+    <script src="../login/login.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="loaderdiv"><div class="loader"></div></div>
+        <section class="Nav">
+              <div><a href="../main/index.html">Enjoy<span>Book</span></a></div>
+              <div>
+                 <a href="../Books/books.html">Books</a>
+                 <a href="../authors/authors.html">Authors</a>
+              </div>
+              <div class="loginandsign">
+                <p class="Login">Login</p>
+                 <p class="SignUp">Sign-up</p>
+                 <a class="DashBoards" href="../login/dashboard.html">DashBoard</a>
+                 <p class="Logout">Logout</p>
+               </div>
+        </section>
+        <div class="ALlBooks">
+            <h1>All Books</h1>
+        </div>
+        <div class="AllBooksBox">
+            <div class="ContainerAllBooks">
+                <!-- <div class="InfoAndImg">
+                    <div class="Bookimg">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa2EUyFdgKKf_OLt-7hB9xVG4hOP6NWeMKVw&usqp=CAU" alt="">
+                    </div>
+                    <div class="BookInfos">
+                        <h2 class="BookInfosH2">Pride and Prejudice</h2>
+                        <div class="BookInfo"><p>ITR-V in other words ‘Income Tax Return- Verification’. It is a single page form. There are five alternative methods for e-verification of ITR filing. It is a type of confidential document i.e. is encrypted and protected by password which is provided by the Income Tax Department as a proof of their e-filing. ITR-V applies to those who file the return without a digital signature.
+
+                            Let's understand the process of getting ITR-V Acknowledgement and how to open with a password.</p></div>
+                        <div class="Authors"><h2>Faiq Resulzade</h2></div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="Sign-up-Modal">
+        <div class="Sign-up-Modal-Container">
+          <div class="Close"><div><p class="ClosebtnText">✕</p></div></div>
+          <div class="Input-container">
+             <div class="Name">
+                 <input type="text" placeholder="type name">
+             </div>
+             <div class="Surname">
+                 <input type="text" placeholder="type surname">
+             </div>
+             <div class="Mail">
+                 <input type="text" placeholder="enter Mail">
+             </div>
+             <div class="Password">
+                 <input type="password" placeholder="enter Password">
+             </div>
+             <div class="Sign-up-Button">
+              <p>Sign Up</p>
+             </div>
+          </div>
+        </div>
+     </div>
+     <div class="Sign-up-Modal1">
+      <div class="Sign-up-Modal-Container1">
+        <div class="Close1"><div><p class="ClosebtnText1">✕</p></div></div>
+        <div class="Input-container1">
+            <div class="Mail1">
+                <input type="text" placeholder="enter Mail" id="Mail">
+            </div>
+            <div class="Password1">
+                <input type="password" placeholder="enter Password" id="Password">
+            </div>
+            <div class="Sign-up-Button1">
+             <p id="Sign-up-Button1">Login</p>
+            </div>
+            <div class="errorsucces">
+               <p class="error">ERROR</p>
+            </div>
+         </div>
+      </div>
+   </div>
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./authors.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./authors.js" defer></script>
+    <link rel="stylesheet" href="../main/style.css">
+    <script src="../login/login.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="loaderdiv"><div class="loader"></div></div>
+        <section class="Nav">
+              <div><a href="../main/index.html">Enjoy<span>Book</span></a></div>
+              <div>
+                 <a href="../Books/books.html">Books</a>
+                 <a href="../authors/authors.html">Authors</a>
+              </div>
+              <div class="loginandsign">
+                <p class="Login">Login</p>
+                 <p class="SignUp">Sign-up</p>
+                 <a class="DashBoards" href="../login/dashboard.html">DashBoard</a>
+                 <p class="Logout">Logout</p>
+               </div>
+        </section>
+        <div class="allAuthorsBox">
+            <h1>All Authors</h1>
+        </div>
+        <div>
+            <div class="AuthorsContainer">
+                <!-- <div class="InfoAndImage">
+                    <div class="AuthorsImg">
+                        <img src="https://media.gettyimages.com/photos/studio-portrait-of-a-beautiful-girl-picture-id1224234453?s=612x612" alt="">
+                    </div>
+                    <div class="AuthorsInfo">
+                        <div><h2>Faiq Resulzade</h2></div>
+                        <div><p>This book is a draft that has been released for evaluation and comment. Some of the later
+                            chapters are included as placeholders and indicators for the intended scope of the final
+                            draft, but are intentionally left blank. The author encourages people to send feedback
+                            including suggestions, corrections, and reviews to inform and influence the final draft.
+                            Thank you in advance to anyone helping out or sending constructive criticisms.
+                            </p></div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="Sign-up-Modal">
+        <div class="Sign-up-Modal-Container">
+          <div class="Close"><div><p class="ClosebtnText">✕</p></div></div>
+          <div class="Input-container">
+             <div class="Name">
+                 <input type="text" placeholder="type name">
+             </div>
+             <div class="Surname">
+                 <input type="text" placeholder="type surname">
+             </div>
+             <div class="Mail">
+                 <input type="text" placeholder="enter Mail">
+             </div>
+             <div class="Password">
+                 <input type="password" placeholder="enter Password">
+             </div>
+             <div class="Sign-up-Button">
+              <p>Sign Up</p>
+             </div>
+          </div>
+        </div>
+     </div>
+     <div class="Sign-up-Modal1">
+      <div class="Sign-up-Modal-Container1">
+        <div class="Close1"><div><p class="ClosebtnText1">✕</p></div></div>
+        <div class="Input-container1">
+            <div class="Mail1">
+                <input type="text" placeholder="enter Mail" id="Mail">
+            </div>
+            <div class="Password1">
+                <input type="password" placeholder="enter Password" id="Password">
+            </div>
+            <div class="Sign-up-Button1">
+             <p id="Sign-up-Button1">Login</p>
+            </div>
+            <div class="errorsucces">
+               <p class="error">ERROR</p>
+            </div>
+         </div>
+      </div>
+   </div>
+    <script src="../script.js" ></script>
+</body>
+</html>

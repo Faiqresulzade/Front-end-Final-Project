@@ -1,0 +1,61 @@
+.Login, .SignUp{
+    display: none !important;
+}
+.DashBoards,.Logout{
+    display: block !important;
+}
+.Dashboardtext{
+    padding: 30px;
+    color: rgb(11, 80, 11);
+    padding-top: 75px;
+}
+.Dashboardbox{
+    display: flex;
+    // border: 1px solid red;
+    width: 300px;
+    justify-content: space-between;
+    margin-left: 30px;
+    div{
+        color: rgb(1, 139, 139);
+        cursor: pointer;
+    }
+}
+.deletimg{
+    width: 30px;
+    height: 30px;
+    // display: block;
+}
+.editimg{
+    width: 30px;
+    height: 30px;
+}
+.bookstablebox{
+    // display: none;
+    width: 1200px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.plus, .deletandedit{
+    text-align: center;
+}
+thead{
+    font-weight:900;
+   
+}
+.Book{
+    border-bottom: 2px solid  rgb(1, 139, 139);;
+}
+.authorsdivBox, .UserTable{
+    width: 1200px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.authorsdivBox{
+    margin-bottom: 50px;
+}
+.AuthorsDiv{
+    display: none;
+}
+#Userdivs{
+    display: none;
+}

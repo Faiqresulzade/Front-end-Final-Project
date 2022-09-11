@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="./login.js" defer></script> -->
+    <link rel="stylesheet" href="../main/style.css">
+    <script src="../script.js" defer></script>
+    <link rel="stylesheet" href="./dashboard.css">
+    <script src="./dashboard.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="loaderdiv"><div class="loader"></div></div>
+        <section class="Nav">
+            <div><a href="../main/index.html">Enjoy<span>Book</span></a></div>
+            <div>
+               <a href="../Books/books.html">Books</a>
+               <a href="../authors/authors.html">Authors</a>
+            </div>
+            <div class="loginandsign">
+             <!-- <p class="Login">Login</p>
+              <p class="SignUp">Sign-up</p> -->
+              <a class="DashBoards" href="./dashboard.html">DashBoard</a>
+              <a class="Logout" href="../main/index.html">Logout</a>
+            </div>
+      </section>
+      <div class="Dashboardtext">
+        <h1>DashBoard</h1>
+      </div>
+      <div class="Dashboardbox">
+        <div id="Book" class="Book">Books</div>
+        <div class="Authors">Authors</div>
+        <div class="Users">Users</div>
+      </div>
+      <div class="Books-Table">
+         <table class="bookstablebox" border="1">
+            <thead>
+                <tr>
+                    <td>#id</td>
+                    <td>Title</td>
+                    <td>Author</td>
+                    <td>Publisher</td>
+                    <td>Price</td>
+                    <td class="plus">➕</td>
+                </tr>
+            </thead>
+            <tbody class="Tbody">
+                <!-- <tr>
+                    <td>0</td>
+                    <td>Pride and Prejeduci</td>
+                    <td>Jane austen</td>
+                    <td>MArtin</td>
+                    <td>18$</td>
+                    <td class="deletandedit">
+                        <img class="deletimg" src="https://tips.typeapp.com/assets/folder_trash.png" alt="">
+                        <img class="editimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWjI6iU7ZfKZ621dn6bGam_B16L8ItemVzkQ&usqp=CAU" alt="">
+                    </td>
+                </tr> -->
+            </tbody>
+         </table>
+      </div>
+      <div class="AuthorsDiv">
+        <table class="authorsdivBox" border="1">
+            <thead>
+                <tr>
+                    <td>#ID</td>
+                    <td>Name</td>
+                    <td>Actions</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody class="tbodyAuthors">
+                <!-- <tr>
+                    <td>0</td>
+                    <td>Faiq</td>
+                    <td>ec</td>
+                    <td>
+                        <img class="deletimg" src="https://tips.typeapp.com/assets/folder_trash.png" alt="">
+                        <img class="editimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWjI6iU7ZfKZ621dn6bGam_B16L8ItemVzkQ&usqp=CAU" alt="">
+                    </td>
+                </tr> -->
+            </tbody>
+        </table>
+      </div>
+      <div id="Userdivs" class="usersDiv">
+        <table border="1" class="UserTable">
+            <thead>
+                <tr>
+                    <td>#ID</td>
+                    <td>Name</td>
+                    <td>Surname</td>
+                    <td>Mail</td>
+                    <td>Password</td>
+                </tr>
+            </thead>
+            <tbody class="TbodyUsers">
+                <tr>
+                    <td>1</td>
+                    <td>Faiq</td>
+                    <td>Resulzade</td>
+                    <td>res@gmail.com</td>
+                    <td>1234567</td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+    </div>
+</body>
+</html>

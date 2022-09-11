@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.Nav {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  border-bottom: 1px solid gray;
+  padding-left: 50px;
+  padding-right: 50px;
+  align-items: center;
+  position: fixed;
+  background-color: rgb(240, 230, 210);
+  width: 100%;
+}
+.Nav * a {
+  margin-right: 50px;
+  font-size: 22px;
+  color: rgb(168, 99, 15);
+}
+.Nav span {
+  color: black;
+  font-weight: bold;
+}
+
+.allAuthorsBox {
+  padding: 30px;
+  color: rgb(11, 80, 11);
+  padding-top: 75px;
+}
+
+.AuthorsImg img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.InfoAndImage {
+  display: flex;
+  width: 600px;
+  margin-bottom: 85px;
+  box-shadow: 4px 7px 19px 4px rgba(0, 0, 0, 0.69);
+}
+
+.AuthorsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.AuthorsInfo :first-child {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.AuthorsInfo {
+  /* padding: 10px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.AuthorsImg {
+  display: flex;
+  align-items: center;
+}
+
+.Sign-up-Modal {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.Sign-up-Modal1 {
+  display: none;
+}
+
+.Sign-up-Modal-Container, .Sign-up-Modal-Container1 {
+  border: 1px solid black;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 200px;
+  border-radius: 10px;
+  position: fixed;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+.Sign-up-Modal-Container1 {
+  width: 409px;
+  height: 165px;
+}
+
+.Input-container, .Input-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.Input-container input, .Input-container1 input {
+  height: 33px;
+  padding: 10px;
+}
+
+.Close, .Close1 {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: end;
+  padding: 3px;
+}
+
+.ClosebtnText, .ClosebtnText1 {
+  width: fit-content;
+  padding: 3px;
+  color: rgb(71, 138, 116);
+  margin-top: -20px !important;
+  font-size: 20px;
+}
+
+.ClosebtnText:hover {
+  cursor: pointer;
+}
+
+.Name, .Mail, .Sign-up-Button, .Mail1, .Sign-up-Button1 {
+  margin-left: 12px;
+}
+
+.Sign-up-Button, .Sign-up-Button1 {
+  border: 2px solid rgb(39, 82, 39);
+  border-radius: 5px;
+  width: 190px;
+}
+.Sign-up-Button :hover, .Sign-up-Button1 :hover {
+  cursor: pointer;
+}
+.Sign-up-Button P, .Sign-up-Button1 P {
+  padding: 8px 55px;
+}
+
+/*# sourceMappingURL=authors.css.map */

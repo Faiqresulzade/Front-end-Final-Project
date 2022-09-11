@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.Nav {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  border-bottom: 1px solid gray;
+  padding-left: 50px;
+  padding-right: 50px;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: rgb(240, 230, 210);
+}
+.Nav * a {
+  margin-right: 50px;
+  font-size: 22px;
+  color: rgb(168, 99, 15);
+}
+.Nav span {
+  color: black;
+  font-weight: bold;
+}
+
+.ALlBooks {
+  padding: 30px;
+  color: rgb(11, 80, 11);
+  padding-top: 75px;
+}
+
+.InfoAndImg {
+  display: flex;
+  width: 568px;
+  margin-bottom: 50px;
+}
+
+.BookInfo {
+  width: 90%;
+  margin-left: 27px;
+  border-left: 1px dashed gray;
+  padding-left: 10px;
+}
+
+.BookInfos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 0px 8px 19px 5px rgba(0, 0, 0, 0.42);
+  height: 348px;
+}
+
+.BookInfosH2 {
+  text-align: center;
+}
+
+.ContainerAllBooks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.Bookimg img {
+  width: 272px;
+  height: 348px;
+}
+
+.Authors {
+  text-align: end;
+  margin: 15px;
+}
+
+/*# sourceMappingURL=books.css.map */

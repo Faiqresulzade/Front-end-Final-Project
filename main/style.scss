@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    // border: 1px solid black;
+    div{
+        // border: 1px solid red;
+    }
+}
+.Nav{
+    // border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    border-bottom: 1px solid gray;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: center; background-color: rgb(240, 230, 210);
+    position: fixed;
+    width: 100%;
+    *a{
+        margin-right: 50px;
+        font-size: 22px;
+        color:rgb(168, 99, 15);
+    }
+    span{
+
+        color: black;
+        font-weight:bold;
+    }
+}
+.BookAbout{
+    // border: 1px solid green;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 20px;
+    .BookInfo{
+        display: flex;
+        gap: 80px;
+        p{
+            margin: 10px;
+        }
+    }
+}
+.BookName h1{
+    font-size: 45px;
+}
+.Authorinfo , .Typeinfo, .LayoutInfo{
+    color: gray;
+}
+.AuthorName, .TypeName, .LayoutName, .BookPrice{
+    color: rgb(105, 49, 3);
+    font-weight: bolder;
+}
+.PrideAndPrejudiceBox{
+    // border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 125px;
+}
+.BookPrice p{
+    font-size: 23px;
+    color: rgb(128, 66, 16);
+}
+.BookImg img{
+    width: 100%;
+    height:100%;
+}
+.LeftBooks{
+    // border: 1px solid green;
+    display: flex;
+    justify-content: center;
+    
+    .BooksInfo{
+        // border: 1px solid red;
+        height: 250px;
+    }
+    .BooksImg{
+        border: 1px solid black;
+       
+    }
+}
+.BooksInfo{
+    display: flex;
+}
+.PrideAndPrejudiceBoxs{
+    display: flex;
+    align-items: center;
+    width: 42%;
+}
+.BookName h1{
+    font-size: 38px;
+    color: rgb(105, 49, 3);
+}
+.BookInfos{
+    display: flex;
+    gap:50px;
+}
+.Books{
+    display: flex;
+    justify-content: space-around;
+    padding: 65px;
+    background-color: rgb(240, 230, 210);
+}
+.BookImg{
+    margin-left: 30px;
+    width: 308px;
+    height: 421px;
+}
+.BookImg2{
+    // border: 1px solid red;
+    img{
+        width: 261px;
+        height: 400px;
+    }
+}
+.PrideAndPrejudiceBoxs2{
+    // border: 1px solid black;
+    display: flex;
+    align-items: center;
+    // margin: 0 auto;
+}
+.BookAbout2{
+    // border: 1px solid green;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 414px;
+    margin-left: 40px;
+}
+.BookInfos2{
+    display: flex;
+    gap: 75px;
+    div{
+        :first-child{
+            color: gray;
+            margin-bottom: 10px;
+        }
+        :last-child{
+            color: rgb(105, 49, 3);
+            font-weight: bolder;
+        }
+    }
+}
+.BookName2 h1{
+    font-size: 38px;
+    color: rgb(105, 49, 3);
+}
+.BookPrice2{
+    font-size: 23px;
+    color: rgb(128, 66, 16);
+    font-weight: bolder;
+}
+.PrideAndPrejudice{
+    background-color: rgb(222, 219, 213);
+}
+.topSellingBooks{
+    color: rgb(19, 71, 19);
+    padding: 50px;
+}
+.TopContainer{
+    // border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    gap: 20px;
+}
+.TopBooks{
+    // border: 1px solid green;
+    width: 256px;
+    p{
+        margin:10px 0px;
+    }
+}
+.TopImg{
+    img{
+        width: 217px;
+        height: 239px;
+        object-fit:contain;
+        margin-left: -29px;
+    }
+}
+.Title, .Price{
+    color: rgb(0, 133, 108);
+    font-weight: bolder	;
+}
+.AuthorsText{
+    padding: 25px;
+    background-color: rgb(247, 247, 222);
+    padding-left: 82px;
+    color:  rgb(19, 71, 19);;
+}
+.AllAuthors{
+    background-color:rgb(247, 247, 222);
+    padding-bottom: 50px;
+}
+.AuthorsImage{
+    display: block;
+    text-align: center;
+    img{
+        border-radius:50%;
+        width:150px;
+        height:150px;
+        object-fit: cover;
+    }
+   
+}
+.AllAuthorsContainer{
+    // border: 1px solid black;
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;    
+}
+.AuthorsInfo{
+    text-align: center;
+    padding:10px;
+    color: black;
+    font-weight: bolder;
+}
+.Footer{
+    background-color: rgb(75, 137, 107);
+    p{
+        text-align: center;
+        display: block;
+         width: 100%;
+         color: white;
+    }
+    :first-child{
+        padding-top:30px;
+        font-weight: bolder;
+    }
+    :last-child{
+        padding: 10px;
+        padding-bottom: 20px;
+    }
+}
+.Sign-up-Modal{
+    display:none;
+    align-items: center;
+    justify-content: center;
+    // border: 1px solid red;
+}
+.Sign-up-Modal1{
+    display: none;
+}
+.Sign-up-Modal-Container, .Sign-up-Modal-Container1{
+    border: 1px solid black;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 200px;
+    border-radius: 10px;
+    position: fixed;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    backdrop-filter:blur(2px);
+    filter: blur(.2px);
+    opacity: .94;
+}
+.Sign-up-Modal-Container1{
+    width: 409px;
+    height: 165px;
+}
+.Input-container, .Input-container1{
+    // border:1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    input{
+        height: 33px;
+        padding: 10px;
+    }
+}
+.Close , .Close1{
+    // border: 1px solid red;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: end;
+    padding: 3px;
+}
+.ClosebtnText, .ClosebtnText1{
+    // border: 1px solid black;
+    width: fit-content;
+    padding: 3px;
+    color: rgb(71, 138, 116);
+    margin-top: -20px !important;
+    font-size: 20px;
+    cursor: pointer;
+}
+.ClosebtnText:hover{
+    cursor: pointer;
+}
+.Name, .Mail, .Sign-up-Button, .Mail1, .Sign-up-Button1{
+    margin-left: 12px;
+}
+.Sign-up-Button, .Sign-up-Button1{
+    border: 2px solid rgb(39, 82, 39);
+    border-radius: 5px;
+    width: 190px;
+    :hover{
+        cursor: pointer;
+    }
+    P{
+        padding:8px 65px;
+    }
+}
+.Login, .SignUp{
+    display: block;
+    cursor: pointer;
+}
+.loginandsign{
+    display:flex;
+    font-size: 20px;
+    color: rgb(168, 99, 15);
+    gap: 20px;
+}
+.Sign-up-Button1{
+    margin-left: 10px;
+}
+.errorsucces{
+    display: none;
+    border: 2px solid red;
+    border-radius: 5px;
+    width: 190px;
+    p{
+        color: red;
+        padding: 8px 65px;
+    }
+}
+.Logout{
+    display: none;
+}
+.DashBoards{
+    display: none;
+}
+.DashBoards, .Logout:hover{
+    cursor: pointer;
+}
+.loaderdiv{
+    position: absolute;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+}
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    z-index: 99999;
+    position: absolute;
+    top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
