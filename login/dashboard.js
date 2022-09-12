@@ -12,6 +12,8 @@ axios.get("http://localhost:3000/api/users").then(resp=>{
     renderUserTable(resp.data);
     loaderdiv.style.display="none"
 })
+
+
 axios.get('http://localhost:3000/api/books').then(resp => {
     renderBookstable(resp.data)
     loaderdiv.style.display="none"
@@ -31,7 +33,7 @@ function renderBookstable(BookList){
                     <td>${Book.publisher}</td>
                     <td>${Book.price} $</td>
                     <td class="deletandedit">
-                        <img class="deletimg" src="https://tips.typeapp.com/assets/folder_trash.png" alt="">
+                        <img onclick="deletebook(${Book.id})" class="deletimg" src="https://tips.typeapp.com/assets/folder_trash.png" alt="">
                         <img class="editimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWjI6iU7ZfKZ621dn6bGam_B16L8ItemVzkQ&usqp=CAU" alt="">
                     </td>
         </tr>
@@ -39,7 +41,13 @@ function renderBookstable(BookList){
         tbody.insertAdjacentHTML("Beforeend",TableHtml)
     })
  }
-    
+    function deletebook(id){
+        axios.delete(`http://localhost:3000/api/books/${id}`)
+        .then(resp=>
+            console.log(resp)
+            .then(err=>console.log(err))
+        )
+    }
  function renderAuthorsList(Authorlist){
     Authorlist.map((authors)=>{
         console.log(authors)
@@ -49,13 +57,18 @@ function renderBookstable(BookList){
                     <td>${authors.name}</td>
                     <td>${authors.biography}</td>
                     <td>
-                        <img class="deletimg" src="https://tips.typeapp.com/assets/folder_trash.png" alt="">
+                        <img onclick="deleteAuthor(${authors.id})" class="deletimg" src="https://tips.typeapp.com/assets/folder_trash.png" alt="">
                         <img class="editimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWjI6iU7ZfKZ621dn6bGam_B16L8ItemVzkQ&usqp=CAU" alt="">
                     </td>
         </tr>
       `
       tbodyAuthors.insertAdjacentHTML("beforeend",authorstable)
     })
+ }
+ function deleteAuthor(id){
+axios.delete(`http://localhost:3000/api/authors/${id}`)
+.then(resp=>console.log(resp))
+.then(err=>console.log(err))
  }
     document.querySelector(".Authors").addEventListener("click",()=>{
     document.querySelector(".Authors").style.borderBottom="2px solid rgb(1, 139, 139)"
